@@ -3,10 +3,18 @@
 body {
   padding: 0 10rem;
 }
-
+.App {
+  padding-top: 2rem;
+}
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+button {
+  background-color: $flirt;
+  border-radius: 1rem;
+  border: none;
 }

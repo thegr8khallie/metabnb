@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+}
+.metabnb-logo {
+  margin-right: auto;
+  height: 4rem;
+}
+.nav-elements {
+  margin: 0 auto;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+.connect-wallet-btn {
+  margin-left: auto;
+  padding: 1.5rem 2rem;
+  color: white;
+}
