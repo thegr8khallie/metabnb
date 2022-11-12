@@ -33,6 +33,9 @@
 }
 //Tablet Styling
 @media only screen and (max-width: $tablet) {
+  .nav {
+    width: calc(100% - 10rem);
+  }
   .navbar-menu {
     display: flex;
     flex-direction: column;
@@ -54,5 +57,11 @@
   }
   .connect-wallet-btn {
     padding: 1rem 1.5rem;
+  }
+}
+//Mobile Styling
+@media only screen and (max-width: $mobile) {
+  .nav {
+    width: calc(100% - 4rem);
   }
 }
