@@ -22,6 +22,11 @@ button {
     background-color: lighten($flirt, 10%);
   }
 }
+@media only screen and (max-width: $tablet) {
+  body {
+    padding: 0 5rem;
+  }
+}
 @media only screen and (max-width: $mobile) {
   body {
     padding: 0 2rem;
