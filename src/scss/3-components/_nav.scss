@@ -41,13 +41,16 @@
     flex-direction: column;
     padding: 1rem;
     background-color: aquamarine;
+    width: 20rem;
+    transform: translateY(20px);
   }
   .nav-elements {
     position: static;
+    width: auto;
     flex-direction: column;
     left: 0;
     top: 0;
-    transform: translate(0);
+    transform: none;
     align-items: flex-start;
     padding-bottom: 1rem;
   }
