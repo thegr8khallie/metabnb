@@ -1,8 +1,10 @@
 .nav {
   display: flex;
   height: 5rem;
-  width: 100%;
+  width: calc(100% - 20rem);
   align-items: center;
+  position: fixed;
+  background-color: aquamarine;
 }
 .metabnb-logo {
   margin-right: auto;
