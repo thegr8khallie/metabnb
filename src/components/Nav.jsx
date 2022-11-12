@@ -13,8 +13,8 @@ export const Nav = () => {
                         <li className="nav-element">NFTs</li>
                         <li className="nav-element">Community</li>
                     </ul>
-                    {/* <div className="nav-element btn-wrapper"></div> */}
-                    <button className="connect-wallet-btn">Connect wallet</button>
+                    <div className=" wallet-btn-wrapper"><button className="connect-wallet-btn">Connect wallet</button></div>
+
                 </div>
             </div>
         </nav>

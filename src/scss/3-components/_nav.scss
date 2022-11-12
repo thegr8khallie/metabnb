@@ -11,7 +11,6 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: aquamarine;
 }
 .metabnb-logo {
   margin-right: auto;
@@ -34,4 +33,26 @@
 }
 //Tablet Styling
 @media only screen and (max-width: $tablet) {
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: aquamarine;
+  }
+  .nav-elements {
+    position: static;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    align-items: flex-start;
+    padding-bottom: 1rem;
+  }
+  .wallet-btn-wrapper {
+    padding-top: 1rem;
+    border-top: 0.1rem solid #000;
+  }
+  .connect-wallet-btn {
+    padding: 1rem 1.5rem;
+  }
 }
