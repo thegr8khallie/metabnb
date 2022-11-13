@@ -2,7 +2,9 @@
 
 .nav {
   height: 10rem;
-  width: calc(100% - 20rem);
+  width: 100vw;
+  transform: translateX(-10rem);
+  padding: 0 4rem;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -36,10 +38,12 @@
 //Tablet Styling
 @media only screen and (max-width: $tablet) {
   .nav {
-    width: calc(100% - 10rem);
+    transform: translateX(-5rem);
+    padding: 0 3rem;
   }
   .navbar-menu {
     display: flex;
+    opacity: 0;
     flex-direction: column;
     padding: 1rem;
     background-color: aquamarine;
@@ -67,8 +71,9 @@
 //Mobile Styling
 @media only screen and (max-width: $mobile) {
   .nav {
-    width: calc(100% - 4rem);
+    transform: translateX(-2rem);
     height: 6rem;
+    padding: 0 1.5rem;
   }
   .metabnb-logo {
     height: 2rem;
