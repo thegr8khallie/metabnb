@@ -19,3 +19,19 @@
     color: $flirt;
   }
 }
+@media only screen and (max-width: $tablet) {
+  .metanfts {
+    transform: translateX(-5rem);
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .metanfts {
+    transform: translateX(-2rem);
+    padding: 5rem 4rem;
+  }
+  .metabnb-nfts {
+    flex-direction: column-reverse;
+    gap: 5rem;
+  }
+}
