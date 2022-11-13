@@ -23,7 +23,7 @@ export const Hero = () => {
                     {
                         heroImages.map((i, j) => {
                             return (
-                                <li className="hero-image" key={j}><img src={i} alt={`Hero Image ${j + 1}`} /></li>
+                                <li className="hero-image" key={j}><img src={i} alt={`Hero${j + 1}`} /></li>
                             )
                         })
                     }
@@ -33,7 +33,7 @@ export const Hero = () => {
                 {
                     bannerImages.map((i, j) => {
                         return (
-                            <div className="patron" key={j}><img src={i} alt={`Patron ${j + 1}`} /></div>
+                            <div className="patron" key={j}><img src={i} alt={`Patron${j + 1}`} /></div>
                         )
                     })
                 }
