@@ -1,0 +1,21 @@
+@use "../1-helpers/helpers" as *;
+
+.metanfts {
+  background-color: $flirt;
+  width: 100vw;
+  transform: translateX(-10rem);
+  padding: 10rem;
+}
+.metabnb-nfts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+.metanft-text {
+  button {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    color: $flirt;
+  }
+}
