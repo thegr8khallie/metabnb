@@ -8,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.purple {
+  color: $flirt;
+}
 .search-location {
   display: flex;
   align-items: center;
@@ -55,4 +58,48 @@
 }
 .patron {
   flex-basis: 15%;
+}
+@media only screen and (max-width: $tablet) {
+  .main-hero-section {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .hero-images {
+    width: 90%;
+  }
+  .patrons-banner {
+    transform: translateX(-5rem);
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .hero-section {
+    padding-top: 6rem;
+  }
+  .search-location {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    input {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+  .hero-images {
+    width: 100%;
+  }
+  .patrons-banner {
+    transform: translateX(-2rem);
+    padding: 5rem;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .patron {
+    flex-basis: 100%;
+  }
 }
