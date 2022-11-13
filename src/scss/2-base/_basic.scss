@@ -12,7 +12,14 @@ img {
   object-fit: cover;
   object-position: center;
 }
-
+input {
+  border: 0.1rem solid $quickSilver;
+  padding: 1rem;
+  border-radius: 0;
+  &:focus {
+    outline: none;
+  }
+}
 button {
   background-color: $flirt;
   border-radius: 1rem;
