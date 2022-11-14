@@ -1,0 +1,36 @@
+@use "../1-helpers/helpers" as *;
+
+.footer {
+  display: flex;
+  background-color: #1d1d1e;
+  color: #f1f3f9;
+  width: 100vw;
+  transform: translateX(-10rem);
+  padding: 6rem;
+  gap: 10rem;
+}
+.company-info {
+  flex-basis: 30%;
+}
+.footer-logo {
+  margin-bottom: 6rem;
+  width: 85%;
+}
+.social-icons {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.footer-links {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  ul {
+    h1 {
+      margin-bottom: 2rem;
+    }
+    li:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}

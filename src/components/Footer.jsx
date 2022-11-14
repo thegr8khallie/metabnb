@@ -12,7 +12,7 @@ export const Footer = () => {
                     <div className="social-icon"><GrInstagram /></div>
                     <div className="social-icon"><FaTwitter /></div>
                 </div>
-                <div className="copyright"><p><FaRegCopyright />2022 Metabnb</p></div>
+                <div className="copyright"><p><FaRegCopyright /> 2022 Metabnb</p></div>
             </div>
             <div className="footer-links">
                 <ul className="community">
