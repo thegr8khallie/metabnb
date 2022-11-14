@@ -1,10 +1,10 @@
-import metabnbLogo from '../assets/icons & vectors/metabnbNav.png'
+import metabnbNav from '../assets/icons & vectors/metabnbNav.png'
 export const Nav = () => {
     return (
         <nav className="nav">
             <div className="navbar">
                 <div className="metabnb-logo">
-                    <img src={metabnbLogo} alt="Metabnb Logo" />
+                    <img src={metabnbNav} alt="Metabnb Logo" />
                 </div>
                 <div className="navbar-menu">
                     <ul className="nav-elements">
