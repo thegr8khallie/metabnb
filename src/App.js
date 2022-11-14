@@ -1,3 +1,4 @@
+import ConnectWalletModal from "./utils/ConnectWalletModal";
 import { Footer, Hero, Inspiration, MetaNFTs, Nav } from "./components";
 import "./scss/style.scss";
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Inspiration />
       <MetaNFTs />
       <Footer />
+      <ConnectWalletModal />
     </div>
   );
 }
