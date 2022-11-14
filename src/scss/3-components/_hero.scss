@@ -21,8 +21,8 @@
     padding: 1rem 8rem;
     display: block;
     border-radius: 0 0.8rem 0.8rem 0;
-    height: 100%;
     color: #fff;
+    border: 0.1rem solid $flirt;
   }
 }
 .hero-images {
@@ -86,6 +86,7 @@
     button {
       width: 100%;
       border-radius: 0;
+      border: none;
     }
   }
   .hero-images {
