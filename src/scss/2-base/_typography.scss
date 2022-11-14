@@ -1,0 +1,77 @@
+@use "../1-helpers/helpers" as *;
+
+@font-face {
+  font-family: "Red Rose Reg";
+  src: url(../../assets/fonts/RedRose-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Red Rose Bold";
+  src: url(../../assets/fonts/RedRose-Bold.ttf) format("truetype");
+}
+body {
+  font-family: $rrReg;
+  font-size: 1.6rem;
+  color: #434343;
+}
+h1,
+h2,
+h3 {
+  font-family: $rrBold;
+}
+.nav-element {
+  font-size: 2rem;
+}
+button {
+  font-family: $rrReg;
+}
+.hero-text h1 {
+  font-size: 5.6rem;
+  margin-bottom: 4rem;
+}
+.hero-text p {
+  width: 64rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  line-height: 3.5rem;
+}
+.metanfts {
+  color: #fff;
+  h1 {
+    font-size: 4.8rem;
+    margin-bottom: 3.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 3.5rem;
+    width: 41.5rem;
+    line-height: 3.5rem;
+    color: #f1f3f9;
+  }
+}
+.footer {
+  .copyright {
+    font-size: 1.6rem;
+  }
+  ul {
+    h1 {
+      font-size: 18px;
+    }
+    li {
+      color: #f1f3f9;
+      font-size: 1.4rem;
+    }
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .hero-text p,
+  .metanfts p {
+    width: 100%;
+  }
+  .metanfts p {
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+}
