@@ -1,0 +1,50 @@
+@use "../1-helpers/helpers" as *;
+
+.connect-wallet-modal {
+  width: 50vw;
+  background-color: #cccccc;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid;
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+}
+.wallet-list p {
+  margin-bottom: 1rem;
+}
+.wallet-option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 0.2rem solid;
+  border-radius: 1rem;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.wallet {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wallet-icon {
+  @include circleConstructor(3rem);
+}
+@media only screen and (max-width: $tablet) {
+  .connect-wallet-modal {
+    width: 65vw;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .connect-wallet-modal {
+    width: 80vw;
+  }
+}
