@@ -28,10 +28,20 @@ import { Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Home = () => {
+  const inspiration = [
+    house5,
+    house6,
+    house7,
+    house8,
+    house1,
+    house2,
+    house3,
+    house4,
+  ];
   return (
     <>
       <Hero />
-      <Inspiration />
+      <Inspiration inspiration={inspiration} />
       <MetaNFTs />
     </>
   );
@@ -57,7 +67,6 @@ const App = () => {
     house15,
     house16,
   ];
-  const inspiration = [];
   useEffect(() => {
     if (window.innerWidth > 1229) {
       setIsHamMenuOpen(true);

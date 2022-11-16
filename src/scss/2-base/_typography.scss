@@ -15,7 +15,8 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-family: $rrBold;
 }
 .nav-element {
@@ -34,6 +35,12 @@ input {
   font-size: 2rem;
   margin-bottom: 4rem;
   line-height: 3.5rem;
+}
+.inspiration h1 {
+  font-size: 4.8rem;
+}
+.inspo-info {
+  font-size: 1.3rem;
 }
 .metanfts {
   color: #fff;
