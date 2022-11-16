@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import metabnbNav from '../assets/icons & vectors/metabnbNav.png'
 export const Nav = () => {
     return (
@@ -8,8 +9,8 @@ export const Nav = () => {
                 </div>
                 <div className="navbar-menu">
                     <ul className="nav-elements">
-                        <li className="nav-element">Home</li>
-                        <li className="nav-element">Place to stay</li>
+                        <li className="nav-element"><Link to='/'>Home</Link></li>
+                        <li className="nav-element"><Link to='/places-to-stay'>Place to stay</Link></li>
                         <li className="nav-element">NFTs</li>
                         <li className="nav-element">Community</li>
                     </ul>
