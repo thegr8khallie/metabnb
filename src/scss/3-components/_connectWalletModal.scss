@@ -1,8 +1,19 @@
 @use "../1-helpers/helpers" as *;
 
+.modal-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #4040404d;
+  left: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+}
 .connect-wallet-modal {
   width: 50vw;
-  background-color: #cccccc;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 3rem;
 }
@@ -24,8 +35,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border: 0.2rem solid;
+  border: 0.1rem solid #cfd8dc;
   border-radius: 1rem;
+  &:first-child {
+    background-color: #f8f9fa;
+  }
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
