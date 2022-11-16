@@ -44,12 +44,15 @@
   }
   .navbar-menu {
     display: flex;
-    opacity: 0;
+    // opacity: 0;
     flex-direction: column;
     padding: 1rem;
     background-color: aquamarine;
     width: 20rem;
-    transform: translateY(40px);
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    transition: 1s;
   }
   .nav-elements {
     position: static;
@@ -67,6 +70,7 @@
   }
   .connect-wallet-btn {
     padding: 1rem 1.5rem;
+    width: 100%;
   }
 }
 //Mobile Styling

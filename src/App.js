@@ -25,6 +25,7 @@ import house14 from "./assets/metabnbs/house14.jpg";
 import house15 from "./assets/metabnbs/house15.jpg";
 import house16 from "./assets/metabnbs/house16.jpg";
 import { Route, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
 };
 
 const App = () => {
+  const [isHamMenuOpen, setIsHamMenuOpen] = useState(false);
   const placesToStay = [
     house1,
     house2,
@@ -56,9 +58,14 @@ const App = () => {
     house16,
   ];
   const inspiration = [];
+  useEffect(() => {
+    if (window.innerWidth > 1229) {
+      setIsHamMenuOpen(true);
+    }
+  }, []);
   return (
     <div className="App">
-      <Nav />
+      <Nav isHamMenuOpen={isHamMenuOpen} setIsHamMenuOpen={setIsHamMenuOpen} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/places-to-stay" element={<PlaceToStay />} />
