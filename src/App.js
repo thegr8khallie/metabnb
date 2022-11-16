@@ -77,7 +77,10 @@ const App = () => {
       <Nav isHamMenuOpen={isHamMenuOpen} setIsHamMenuOpen={setIsHamMenuOpen} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/places-to-stay" element={<PlaceToStay />} />
+        <Route
+          path="/places-to-stay"
+          element={<PlaceToStay placesToStay={placesToStay} />}
+        />
       </Routes>
       <Footer />
       <ConnectWalletModal />

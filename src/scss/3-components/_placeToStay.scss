@@ -1,0 +1,54 @@
+@use "../1-helpers/helpers" as *;
+
+.place-to-stay {
+  padding-top: 15rem;
+}
+.metabnb-categories {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: $tablet) {
+  .metabnb-categories {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .metabnb-category {
+    flex-basis: 20%;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .place-to-stay {
+    padding-top: 10rem;
+  }
+  .metabnb-categories {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+  .metabnb-category {
+    flex-basis: 40%;
+    &:last-child {
+      flex-basis: 100%;
+      position: relative;
+      background-color: red;
+      input {
+        width: 100%;
+      }
+      button {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        background-color: #fff;
+        display: grid;
+        place-content: center;
+        height: 100%;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
