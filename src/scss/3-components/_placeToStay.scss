@@ -10,6 +10,20 @@
   align-items: center;
   margin-bottom: 5rem;
 }
+.metabnb-category:last-child {
+  position: relative;
+  button {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (max-width: $tablet) {
   .metabnb-categories {
     flex-wrap: wrap;
@@ -33,21 +47,8 @@
     flex-basis: 40%;
     &:last-child {
       flex-basis: 100%;
-      position: relative;
-      background-color: red;
       input {
         width: 100%;
-      }
-      button {
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%) rotate(90deg);
-        background-color: #fff;
-        display: grid;
-        place-content: center;
-        height: 100%;
-        font-size: 2.5rem;
       }
     }
   }

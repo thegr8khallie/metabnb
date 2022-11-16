@@ -1,9 +1,12 @@
-import { FaHamburger } from "react-icons/fa"
+import { FaHamburger } from "react-icons/fa";
+import { MdClose } from 'react-icons/md';
 
 const Hamburger = ({ isHamMenuOpen, setIsHamMenuOpen }) => {
     return (
         <div className="hamburger" onClick={() => setIsHamMenuOpen(!isHamMenuOpen)}>
-            <FaHamburger />
+            {
+                isHamMenuOpen ? <MdClose /> : <FaHamburger />
+            }
         </div>
     )
 }

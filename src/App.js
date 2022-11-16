@@ -49,6 +49,7 @@ const Home = () => {
 
 const App = () => {
   const [isHamMenuOpen, setIsHamMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const placesToStay = [
     house1,
     house2,
@@ -74,7 +75,11 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <Nav isHamMenuOpen={isHamMenuOpen} setIsHamMenuOpen={setIsHamMenuOpen} />
+      <Nav
+        isHamMenuOpen={isHamMenuOpen}
+        setIsHamMenuOpen={setIsHamMenuOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -83,7 +88,10 @@ const App = () => {
         />
       </Routes>
       <Footer />
-      <ConnectWalletModal />
+      <ConnectWalletModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </div>
   );
 };

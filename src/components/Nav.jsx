@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom'
 import metabnbNav from '../assets/icons & vectors/metabnbNav.png'
 import Hamburger from '../utils/Hamburger'
-export const Nav = ({ isHamMenuOpen, setIsHamMenuOpen }) => {
+export const Nav = ({ isHamMenuOpen, setIsHamMenuOpen, setIsModalOpen }) => {
     const handleNavigate = () => {
-        setIsHamMenuOpen(false)
+        if (window.innerWidth <= 1229) {
+            setIsHamMenuOpen(false)
+        } else {
+            return;
+        }
+    }
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+        handleNavigate()
     }
     return (
         <nav className="nav">
@@ -18,7 +26,7 @@ export const Nav = ({ isHamMenuOpen, setIsHamMenuOpen }) => {
                         <li className="nav-element">NFTs</li>
                         <li className="nav-element">Community</li>
                     </ul>
-                    <div className=" wallet-btn-wrapper"><button className="connect-wallet-btn">Connect wallet</button></div>
+                    <div className=" wallet-btn-wrapper"><button className="connect-wallet-btn" onClick={handleOpenModal}>Connect wallet</button></div>
                 </div>
                 <Hamburger isHamMenuOpen={isHamMenuOpen} setIsHamMenuOpen={setIsHamMenuOpen} />
             </div>
