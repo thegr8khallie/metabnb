@@ -1,4 +1,3 @@
-import star from '../assets/icons & vectors/star.svg'
 import StarRating from '../utils/StarRating'
 
 export const Inspiration = ({ inspiration }) => {
